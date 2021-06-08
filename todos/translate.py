@@ -39,7 +39,7 @@ def get(event, context):
     
     source_result = detect_language_task(task)
     
-    source = source_result['Languages'][0]['LanguagesCode']
+    source = source_result['Languages'][0]['LanguageCode']
     
     task_translated = translate_task(task, source, target)
     
